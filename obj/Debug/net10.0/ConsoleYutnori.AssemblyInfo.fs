@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleYutnori")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8154065091c571dfe7166d8e717f1c04503f735")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a5359650d4f71ba5a0204b1d10e05669368557e")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("ConsoleYutnori")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("ConsoleYutnori")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
