@@ -1,4 +1,3 @@
-
 # Console Yutnori
 
 A command-line implementation of the traditional Korean board game **Yutnori**, built with **F# / .NET 10**.
@@ -18,8 +17,6 @@ Verify your installation:
 ```bash
 dotnet --version
 ```
-
-The output should show a version beginning with `10.`.
 
 ### Run
 
@@ -67,7 +64,7 @@ Move all four of your pieces from the starting position to the finish before the
 
 ### Computer Turn
 
-The computer automatically selects a move using a simple greedy strategy:
+The computer automatically selects a move using a greedy strategy:
 
 1. Prefer moves that finish pieces.
 2. Prefer moves that capture opponent pieces.
@@ -93,71 +90,52 @@ The game ends when all four pieces of one player reach the finish position.
 
 ---
 
-## Board Representation
-
-The board is displayed as a text-based grid showing:
-
-* Board positions
-* Player pieces (`a1`, `a2`, `a3`, `a4`)
-* Computer pieces (`A1`, `A2`, `A3`, `A4`)
-
-Example:
-
-```text
-[10: ][ 9: ][ 8: ]      [ 7: ][ 6: ][ 5: ]
-[18: ][11: ]            [13: ][ 4: ]
-[19: ]      [12: ]    [14: ]      [ 3:a1]
-           [15: ]
-[20: ]      [16: ]    [23: ]      [ 2: ]
-[21: ][17: ]            [24: ][ 1:A1]
-[22: ][25: ][26: ]      [27: ][28: ][29: ]
-```
-
----
-
 ## Project Structure
 
 ```text
 ConsoleYutnori/
 ├── ConsoleYutnori.fsproj
 ├── Program.fs
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
-### Main Components
+---
 
-| Component      | Responsibility                                       |
-| -------------- | ---------------------------------------------------- |
-| Rule Logic     | Piece movement, shortcuts, finishing, captures       |
-| Random Cast    | Simulates Yut throws using probability distributions |
-| Board Renderer | Displays the Yutnori board and piece locations       |
-| User Input     | Handles move selection and validation                |
-| Computer AI    | Chooses moves using a greedy strategy                |
-| Game Loop      | Controls turns, victory checks, and replay           |
+## Main Features
+
+* User vs Computer gameplay
+* Support for Do, Gae, Geol, Yut, Mo, and Back Do
+* Piece stacking (group movement)
+* Piece capturing
+* Bonus throws
+* Shortcut paths
+* Automatic computer opponent
+* Replay support after game completion
 
 ---
 
-## Rules Summary
+## LLM Usage
 
-* The player controls four pieces.
-* The computer controls four pieces.
-* All pieces start at position 0.
-* All pieces must reach the finish position.
-* Yut and Mo grant additional throws.
-* Capturing grants a bonus throw.
-* Shortcut paths may be used when available.
-* Back Do is supported.
-* Stacked pieces move together.
-* The first player to finish all four pieces wins.
+This project was developed with assistance from ChatGPT.
+
+ChatGPT was used for:
+
+* Generating portions of the F# source code
+* Generating and improving code comments
+* Debugging and correcting F# syntax issues
+* Improving the structure and clarity of the README documentation
+
+One notable issue involved the implementation of the piece stacking (group movement) rule. The initial ChatGPT-generated logic did not fully match the intended Yutnori rules because the prompt only stated that the game should follow Yutnori rules, without explicitly describing how stacked pieces should move together. As a result, the stacking logic was manually reviewed and modified to correctly reflect the intended game behavior.
+
+All generated content was reviewed, tested, and integrated into the final implementation by the author.
 
 ---
 
-## Example Session
+## Example Run
 
 ```text
 Turn #0 - Player
-
-Rolling Yut...
 
 Result: Geol (3)
 
