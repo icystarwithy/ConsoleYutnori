@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="ConsoleYutnori">
+    <resource name="FSharpSignatureData.ConsoleYutnori" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.ConsoleYutnori" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.ConsoleYutnori" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.ConsoleYutnori" action="remove"></resource>
+    <resource name="FSharpOptimizationData.ConsoleYutnori" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.ConsoleYutnori" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.ConsoleYutnori" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.ConsoleYutnori" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.ConsoleYutnori" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.ConsoleYutnori" action="remove"></resource>
+  </assembly>
+</linker>

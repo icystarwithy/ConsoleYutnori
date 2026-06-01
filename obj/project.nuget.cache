@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "700kH7Pz9Es=",
+  "success": true,
+  "projectFilePath": "C:\\CS220\\ConsoleYutnori\\ConsoleYutnori.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tlsdm\\.nuget\\packages\\fsharp.core\\10.1.204\\fsharp.core.10.1.204.nupkg.sha512"
+  ],
+  "logs": []
+}
